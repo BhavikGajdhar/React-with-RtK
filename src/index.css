@@ -1,0 +1,283 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.text-start {
+  text-align: start;
+}
+/* src/index.css or src/RegistrantList.css */
+.table-container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registrant-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.registrant-table th,
+.registrant-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.registrant-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.registrant-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.registrant-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.registrant-table td {
+  color: #333;
+}
+
+/* Countdown.css */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 0;
+}
+
+.time-left {
+  font-size: 2rem;
+  color: #005499;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.time-left span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.d-flex{
+  display: flex;
+} 
+
+.gap-3 {
+  gap: 1rem;
+} 
+
+.align-items-center {
+  align-items: center;
+}
+
+/* RegistrationForm.css */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #6c757d;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-radio-group label {
+  font-weight: normal;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-submit, .btn-cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #005499;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* styles for edit and delete buttons */
+.btn-primary {
+  background-color: #0058a0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Add hover effects */
+.btn-primary:hover {
+  background-color: #005499;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.profile-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+  .registrant-table th, .registrant-table td {
+    padding: 8px;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+}
